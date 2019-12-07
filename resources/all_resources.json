@@ -1,0 +1,32 @@
+[
+    {
+        "container_image_name": "postgres",
+        "ip_host": "10.0.0.25",
+        "container_image_id": "4a82a16ee75e",
+        "unused": 350,
+        "use": 0,
+        "type": "storage",
+        "id": 0,
+        "host": "vmserver"
+    },
+    {
+        "container_image_name": "ubuntu",
+        "ip_host": "10.0.0.26",
+        "container_image_id": "775359758637",
+        "unused": 0,
+        "use": 0,
+        "type": "distro",
+        "id": 1,
+        "host": "deepinvm"
+    },
+    {
+        "container_image_name": "ubuntu",
+        "ip_host": "10.0.0.26",
+        "container_image_id": "775359758637",
+        "unused": 0,
+        "use": "20",
+        "type": "distro",
+        "id": 2,
+        "host": "deepinvm"
+    }
+]

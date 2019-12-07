@@ -1,0 +1,26 @@
+Limitar memória em 512MB:
+docker run -it -m 512M --name app01 ubuntu
+
+Limitar quantidade de CPUs:
+docker run -it --cpus=0.5 --name app02 ubuntu
+
+Limites de CPU e memória definidos:
+docker run -it --cpus=4 -m 512M --name app_novo01 ubuntu
+
+Atualiza limites de CPU e memória definidos:
+docker container update -m 256m --cpus=1 app_novo01
+
+Pode-se usar a limitação de CPU da seguinte forma:
+--cpu-shares: Não garante nem reserva nenhum acesso específico à CPU
+--cpuset-cpus: setar CPUs específicas para serem usadas
+--cpu-quota=<value>: conta de CPU, limitação de número de microssegundos por --cpu-period
+--cpu-period=<value>: período do planejador
+
+Para especificar quota e period é só usar float no --cpus
+Assim --cpus="1.5" é equivalente a configurar --cpu-period="100000" e --cpu-quota="150000"
+
+Limita quantidade de armazenamento
+docker run --storage-opt "size=50GB"
+
+Montar uma pasta do Host Docker dentro de um container
+docker run -v /storage_host/:/storage/ -ti -d ubuntu

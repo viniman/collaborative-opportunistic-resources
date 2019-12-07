@@ -1,0 +1,18 @@
+[
+   {
+        "id": "0",
+        "type": "storage"
+    },
+    {
+        "id": "1",
+        "type": "distro"
+    },
+    {
+        "id": "2",
+        "type": "cpumemory"
+    },
+    {
+        "id": "3",
+        "type": "postgres"
+    }
+]

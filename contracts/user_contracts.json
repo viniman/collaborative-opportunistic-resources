@@ -1,0 +1,12 @@
+[
+    {
+         "user_ip": "127.0.0.1",
+         "type_resource": "storage",
+         "container_name": "ubuntu"
+     },
+     {
+        "user_ip": "10.0.0.26",
+        "type_resource": "storage",
+        "container_name": "ubuntu"
+    }
+ ]
